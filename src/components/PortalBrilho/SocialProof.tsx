@@ -41,7 +41,9 @@ export default function SocialProof() {
                 <Image 
                   src={clip.img} 
                   alt={clip.caption} 
-                  fill 
+                  fill
+                  quality={100}
+                  unoptimized
                   style={{ objectFit: 'cover' }} 
                   className={styles.image}
                 />

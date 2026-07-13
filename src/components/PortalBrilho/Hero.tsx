@@ -12,6 +12,8 @@ export default function Hero() {
           alt="Cristóvão Brilho"
           fill
           priority
+          quality={100}
+          unoptimized
           className={styles.heroImg}
         />
       </div>

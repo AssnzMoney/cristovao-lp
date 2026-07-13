@@ -13,7 +13,9 @@ export default function AboutMaster() {
               alt="Cristóvão Brilho com seu livro" 
               width={600} 
               height={600}
-              style={{ objectFit: 'cover', borderRadius: '8px' }}
+              quality={100}
+              unoptimized
+              style={{ objectFit: 'cover' }}
             />
           </div>
           
