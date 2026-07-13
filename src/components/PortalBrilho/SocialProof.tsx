@@ -1,17 +1,57 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from './SocialProof.module.css';
 
 export default function SocialProof() {
+  const clippings = [
+    {
+      img: '/social-proof-1.png',
+      caption: 'Revista Nacional',
+      link: '#'
+    },
+    {
+      img: '/social-proof-2.png',
+      caption: 'Jornal Local',
+      link: '#'
+    },
+    {
+      img: '/social-proof-3.png',
+      caption: 'Entrevista Internacional',
+      link: '#'
+    },
+    {
+      img: '/social-proof-4.png',
+      caption: 'Matéria Especial',
+      link: '#'
+    }
+  ];
+
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <h2 className={styles.title}>
-          MILHARES DE PESSOAS JÁ TIVERAM TRANSFORMAÇÕES EM VÁRIOS ÂMBITOS DE SUAS VIDAS ATRAVÉS DE CRISTÓVÃO BRILHO
-        </h2>
+        <h2 className={styles.title}>Reconhecimento e Autoridade</h2>
+        <p className={styles.subtitle}>
+          Cristóvão Brilho e seu trabalho de cura têm sido destaque nos maiores veículos de imprensa.
+        </p>
         
-        <div className={styles.placeholderBox}>
-          <h3>[ ADICIONAR PROVAS AQUI ]</h3>
-          <p>Insira os prints de depoimentos, vídeos ou fotos de palestras aqui.</p>
+        <div className={styles.grid}>
+          {clippings.map((clip, index) => (
+            <a key={index} href={clip.link} className={styles.card} target="_blank" rel="noopener noreferrer">
+              <div className={styles.imageWrapper}>
+                <Image 
+                  src={clip.img} 
+                  alt={clip.caption} 
+                  fill 
+                  style={{ objectFit: 'cover' }} 
+                  className={styles.image}
+                />
+              </div>
+              <div className={styles.captionWrapper}>
+                <p>{clip.caption}</p>
+                <span className={styles.readMore}>Ler Matéria →</span>
+              </div>
+            </a>
+          ))}
         </div>
       </div>
     </section>
