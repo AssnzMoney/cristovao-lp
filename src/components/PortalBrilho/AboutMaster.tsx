@@ -29,10 +29,6 @@ export default function AboutMaster() {
             </p>
             
             <p>
-              Não como guru. Não como figura de palco.
-            </p>
-            
-            <p>
               Como alguém que passou cinco décadas no caminho — e que agora, pela primeira vez, está criando um espaço para você caminhar junto com ele nessa missão.
             </p>
             

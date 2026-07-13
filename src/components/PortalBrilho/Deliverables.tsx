@@ -1,5 +1,5 @@
 import React from 'react';
-import { CalendarDays, MessageCircle, Sparkles, HandMetal, Eye, BookOpen, Video, Users } from 'lucide-react';
+import { CalendarDays, MessageCircle, Sparkles, HandMetal, Eye, BookOpen, Video, Users, Lock } from 'lucide-react';
 import styles from './Deliverables.module.css';
 
 export default function Deliverables() {
@@ -69,6 +69,7 @@ export default function Deliverables() {
             rel="noopener noreferrer"
           >
             QUERO FAZER PARTE DO PORTAL BRILHO
+            <Lock size={20} style={{ marginLeft: '10px' }} />
           </a>
         </div>
       </div>
