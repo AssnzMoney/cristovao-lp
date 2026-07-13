@@ -1,8 +1,10 @@
-import React from 'react';
-import { Mail } from 'lucide-react';
+"use client";
+import React, { useState } from 'react';
+import { Mail, ChevronDown, ChevronUp } from 'lucide-react';
 import styles from './Footer.module.css';
 
 export default function Footer() {
+  const [showTerms, setShowTerms] = useState(false);
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
@@ -10,9 +12,20 @@ export default function Footer() {
           O trabalho de Cristóvão Brilho não desaconselha o uso de medicamentos e consulta da medicina convencional.
         </p>
 
-        <p className={styles.termsText}>
-          TERMOS DE USO E DIREITOS AUTORAIS - Todos os direitos reservados. Todo o conteúdo deste site (textos, vídeos, marcas, ilustrações, fotos, gráficos, arquivos, designs, ebooks, áudios, etc.) é protegido por direitos autorais e outras leis de proteção. A distribuição, compartilhamento, ou venda sem autorização do produtor, além de antiético, é crime. Fica o usuário avisado, ciente e de acordo que toda a responsabilidade das escolhas por ele feitas, das ações e dos resultados obtidos antes, durante e após o uso do site são exclusivamente dele. Dada a complexidade dos serviços e dos diversos fatores que contribuem para o sucesso dos resultados propostos, o usuário entende e concorda que a utilização do site tem caráter informativo e educacional, isentando o produtor de todo e qualquer tipo de responsabilidade pela saúde física, mental, emocional e espiritual, por eventuais ganhos ou perdas financeiras ou por qualquer outro resultado que o usuário possa experimentar através do uso deste site. Ficam as partes cientes e de acordo que nada relacionado a este site deve ser considerado aconselhamento médico, de saúde mental, jurídico, financeiro ou religioso de qualquer forma. Caso o usuário esteja passando por problemas emocionais e psicológicos, orientamos a busca de um profissional especializado na área da saúde para receber o tratamento ideal para o seu quadro.
-        </p>
+        <div className={styles.termsContainer}>
+          <button 
+            onClick={() => setShowTerms(!showTerms)} 
+            className={styles.termsToggle}
+          >
+            TERMOS DE USO E AVISO LEGAL {showTerms ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+          </button>
+
+          {showTerms && (
+            <p className={styles.termsText}>
+              TERMOS DE USO E DIREITOS AUTORAIS - Todos os direitos reservados. Todo o conteúdo deste site (textos, vídeos, marcas, ilustrações, fotos, gráficos, arquivos, designs, ebooks, áudios, etc.) é protegido por direitos autorais e outras leis de proteção. A distribuição, compartilhamento, ou venda sem autorização do produtor, além de antiético, é crime. Fica o usuário avisado, ciente e de acordo que toda a responsabilidade das escolhas por ele feitas, das ações e dos resultados obtidos antes, durante e após o uso do site são exclusivamente dele. Dada a complexidade dos serviços e dos diversos fatores que contribuem para o sucesso dos resultados propostos, o usuário entende e concorda que a utilização do site tem caráter informativo e educacional, isentando o produtor de todo e qualquer tipo de responsabilidade pela saúde física, mental, emocional e espiritual, por eventuais ganhos ou perdas financeiras ou por qualquer outro resultado que o usuário possa experimentar através do uso deste site. Ficam as partes cientes e de acordo que nada relacionado a este site deve ser considerado aconselhamento médico, de saúde mental, jurídico, financeiro ou religioso de qualquer forma. Caso o usuário esteja passando por problemas emocionais e psicológicos, orientamos a busca de um profissional especializado na área da saúde para receber o tratamento ideal para o seu quadro.
+            </p>
+          )}
+        </div>
 
         <div className={styles.middleSection}>
           <div className={styles.logo}>
