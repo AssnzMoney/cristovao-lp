@@ -169,3 +169,31 @@
   color: var(--color-text-main);
   font-style: italic;
 }
+
+@media (max-width: 768px) {
+  .section {
+    padding: 4rem 1rem;
+  }
+  
+  .pricingCard {
+    padding: 2rem 1.5rem;
+  }
+
+  .currentPrice {
+    font-size: 3rem;
+  }
+
+  .ctaButton {
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .guarantee {
+    padding: 2rem 1.5rem;
+  }
+  
+  .guaranteeTitle {
+    font-size: 1.2rem;
+  }
+}

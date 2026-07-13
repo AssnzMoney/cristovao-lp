@@ -12,7 +12,7 @@ export default function Hero() {
           alt="Cristóvão Brilho"
           fill
           priority
-          style={{ objectFit: 'cover', objectPosition: 'right top' }}
+          className={styles.heroImg}
         />
       </div>
       

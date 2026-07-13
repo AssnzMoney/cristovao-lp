@@ -38,3 +38,17 @@
 .placeholderBox p {
   font-size: 1.1rem;
 }
+
+@media (max-width: 768px) {
+  .section {
+    padding: 4rem 1.5rem;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+  }
+  
+  .placeholderBox {
+    padding: 3rem 1.5rem;
+  }
+}
