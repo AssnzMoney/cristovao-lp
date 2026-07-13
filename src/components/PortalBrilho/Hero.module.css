@@ -1,0 +1,140 @@
+.hero {
+  background: var(--color-bg-secondary);
+  position: relative;
+  overflow: hidden;
+  padding: 4rem 2rem 0 2rem; /* Removed bottom padding so image sits flush */
+  min-height: 80vh;
+  display: flex;
+  align-items: stretch; /* Stretch container to full height */
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(to bottom, rgba(252, 252, 252, 0) 0%, var(--color-bg-primary) 100%);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.logoTopLeft {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--color-primary); /* Cor dourada do site */
+  padding-top: 2rem;
+  letter-spacing: 1px;
+}
+
+.content {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50%;
+}
+
+.imageBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.kicker {
+  font-family: var(--font-primary);
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3.5rem;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  margin-bottom: 2.5rem;
+  max-width: 90%;
+  line-height: 1.6;
+}
+
+.ctaButton {
+  background-color: var(--color-primary);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 1.2rem 3rem;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.arrow {
+  font-size: 1.2rem;
+}
+
+.imageArea {
+  position: relative;
+  height: 100%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholderImage {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+
+/* Quando o usuário inserir a imagem via next/image, ela deve ocupar o espaço sem bordas */
+.placeholderImage img {
+  object-fit: contain;
+  object-position: bottom center;
+}
+
+@media (max-width: 900px) {
+  .content {
+    max-width: 100%;
+    padding: 2rem 1rem;
+    background: rgba(249, 246, 240, 0.85); /* Fundo semi-transparente no celular para leitura */
+    border-radius: 8px;
+    margin-top: 2rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+}
