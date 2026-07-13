@@ -5,12 +5,12 @@ import styles from './Deliverables.module.css';
 export default function Deliverables() {
   const items = [
     {
-      icon: <Video className={styles.icon} size={28} />,
+      icon: <Video size={32} strokeWidth={1.5} />,
       title: 'Encontros mensais ao vivo com Cristóvão Brilho',
       description: 'Sessões onde você aprenderá ao vivo as técnicas milenares para quebra da matriz energética.'
     },
     {
-      icon: <MessageCircle className={styles.icon} size={28} />,
+      icon: <MessageCircle size={32} strokeWidth={1.5} />,
       title: 'Acesso direto a Cristóvão e à equipe pelo WhatsApp do Portal',
       description: 'Um canal direto para tirar dúvidas, relatar progressos e estar em sintonia com a comunidade.'
     },
@@ -35,7 +35,7 @@ export default function Deliverables() {
       description: 'Mantras, exercícios de fortalecimento e alinhamento de chakras para o dia a dia.'
     },
     {
-      icon: <BookOpen className={styles.icon} size={28} />,
+      icon: <CalendarDays size={32} strokeWidth={1.5} />,
       title: 'Todo o acervo gravado de Cristóvão Brilho',
       description: 'Conteúdos exclusivos e não listados no YouTube, reunidos em uma biblioteca poderosa.'
     },
