@@ -48,7 +48,6 @@ export default function SocialProof() {
               </div>
               <div className={styles.captionWrapper}>
                 <p>{clip.caption}</p>
-                <span className={styles.readMore}>Ler Matéria →</span>
               </div>
             </a>
           ))}
