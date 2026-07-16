@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from 'react';
 import { Mail, ChevronDown, ChevronUp } from 'lucide-react';
 import styles from './Footer.module.css';

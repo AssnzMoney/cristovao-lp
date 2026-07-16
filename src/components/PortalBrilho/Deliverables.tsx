@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import { CalendarDays, MessageCircle, Sparkles, HandMetal, Eye, BookOpen, Video, Users, Lock } from 'lucide-react';
 import styles from './Deliverables.module.css';
