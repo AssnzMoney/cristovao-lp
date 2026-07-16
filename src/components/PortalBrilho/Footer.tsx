@@ -35,10 +35,10 @@ export default function Footer() {
           <div className={styles.social}>
             <span className={styles.socialText}>Acompanhe-nos nas redes sociais:</span>
             <div className={styles.socialIcons}>
-              <a href="#" aria-label="Instagram"><IconInstagram /></a>
-              <a href="#" aria-label="Facebook"><IconFacebook /></a>
-              <a href="#" aria-label="YouTube"><IconYoutube /></a>
-              <a href="#" aria-label="Email"><Mail size={20} /></a>
+              <a href="https://www.instagram.com/cristovaobrilho/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><IconInstagram /></a>
+              <a href="https://www.facebook.com/cbrilho" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><IconFacebook /></a>
+              <a href="https://www.youtube.com/channel/UCSPJcmnWt721BbU_cuP6GWQ" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><IconYoutube /></a>
+              <a href="mailto:supportportalbrilho@gmail.com" aria-label="Email"><Mail size={20} /></a>
             </div>
           </div>
         </div>

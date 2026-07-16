@@ -3,8 +3,8 @@
   --color-bg-secondary: #f9f6f0; /* Light warm cream */
   --color-primary: #cca32b; /* Bright Gold */
   --color-primary-hover: #b58d1e;
-  --color-text-main: #3d3d3d; /* Dark warm gray */
-  --color-text-muted: #6b6b6b;
+  --color-text-main: #222222; /* Darker main text for higher contrast */
+  --color-text-muted: #4a4a4a; /* Darker muted text for visibility */
   --color-gold: #c6a87c;
   
   --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -17,7 +17,10 @@
   margin: 0;
 }
 
-html,
+html {
+  font-size: 112.5%; /* Aumenta o tamanho base para 18px */
+}
+
 body {
   max-width: 100vw;
   overflow-x: hidden;

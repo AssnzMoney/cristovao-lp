@@ -6,23 +6,23 @@ export default function SocialProof() {
   const clippings = [
     {
       img: '/social-proof-1.png',
-      caption: 'Revista Nacional',
-      link: '#'
+      caption: 'O Senhor dos Cristais',
+      link: 'https://cristovaobrilho.com.br/wp-content/uploads/2021/10/Jornal-do-Brasil-Revista-Vida.pdf'
     },
     {
       img: '/social-proof-2.png',
-      caption: 'Jornal Local',
-      link: '#'
+      caption: 'National Examiner USA',
+      link: 'https://cristovaobrilho.com.br/wp-content/uploads/2021/10/Revista-National-Examiner-USA.pdf'
     },
     {
       img: '/social-proof-3.png',
-      caption: 'Entrevista Internacional',
-      link: '#'
+      caption: 'Poderoso Ser de Luz',
+      link: 'https://cristovaobrilho.com.br/wp-content/uploads/2022/06/PODEROSO-SER-DE-LUZ.pdf'
     },
     {
       img: '/social-proof-4.png',
-      caption: 'Matéria Especial',
-      link: '#'
+      caption: 'Sede de um dos 4 Melhores Curadores do Mundo',
+      link: 'https://cristovaobrilho.com.br/wp-content/uploads/2022/06/SEDE-DE-UNO-DE-LOS-4-MEJORES...-1.pdf'
     }
   ];
 
@@ -50,6 +50,7 @@ export default function SocialProof() {
               </div>
               <div className={styles.captionWrapper}>
                 <p>{clip.caption}</p>
+                <span className={styles.readMore}>Ver Matéria &rarr;</span>
               </div>
             </a>
           ))}
