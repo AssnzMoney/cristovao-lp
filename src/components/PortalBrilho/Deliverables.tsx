@@ -65,7 +65,7 @@ export default function Deliverables() {
 
         <div className={styles.ctaWrapper}>
           <a 
-            href="https://pay.hotmart.com/E106709691V?off=5kw8hfp0"
+            href="https://pay.hotmart.com/E106709691V?off=zmdi5ntj&bid=1784323054528"
             className={styles.ctaButton}
             target="_blank"
             rel="noopener noreferrer"

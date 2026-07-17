@@ -35,7 +35,7 @@ export default function Hero() {
             Faça parte do Portal Brilho e tenha acesso ao que Cristóvão Brilho ensina há mais de cinco décadas.
           </p>
           <a 
-            href="https://pay.hotmart.com/E106709691V?off=5kw8hfp0" 
+            href="https://pay.hotmart.com/E106709691V?off=zmdi5ntj&bid=1784323054528" 
             className={styles.ctaButton}
             target="_blank" 
             rel="noopener noreferrer"
